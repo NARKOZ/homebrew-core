@@ -25,6 +25,6 @@ class GitlabGem < Formula
   end
 
   test do
-    assert_equal "Gitlab Ruby Gem 4.3.0", shell_output("#{bin}/gitlab --version").strip
+    assert_equal "Please set an endpoint to API", shell_output("#{bin}/gitlab user").strip
   end
 end
